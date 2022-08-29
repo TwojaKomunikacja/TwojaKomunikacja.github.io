@@ -1,0 +1,163 @@
+html {
+    overflow-y: scroll;
+    scrollbar-color: black red;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    font-family: Unispace;
+}
+
+nav {
+    background-color: black;
+    height: 80px;
+}
+
+nav ul {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+header a {
+    color: white;
+    text-align: center;
+    padding: 28px 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+}
+
+header a:hover {
+    background: red;
+}
+
+.logo {
+    float: left;
+    height: 80px;
+    padding: 0;
+    margin: 0;
+    width: auto;
+}
+
+#main {
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+    height: 30%;
+}
+
+#KoronaDiv {
+    background-image: url("Tlo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+    width: 100%;
+}
+
+#KoronaP {
+    position: relative;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    top: 80%;
+    left: 50%;
+    margin: 0 auto;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 5vh;
+}
+
+#main a:hover, #main a:visited, #main a:link, #main a:active
+{
+    text-decoration: none;
+}
+
+aside {
+    background-image: url("Tlo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1080px) {
+    .main, footer {
+      width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1081px) {
+    .main, footer {
+      width: 70%;
+    }
+}
+
+.main {
+    text-align: center;
+    background-color: rgba(255, 255, 255, .7);
+    margin: 0 auto;
+    display: flow-root;
+    min-height: calc(100vh - 144px);
+}
+
+p, #pojecia {
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+    display: flow-root;
+}
+
+#pojecia {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.innerimage {
+    max-width: calc(100% - 40px);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+button {
+    width: 65px;
+    background-color: red;
+    color: white;
+    border: 0px;
+    border-color: black;
+    font-family: Unispace;
+    cursor: pointer;
+}
+
+.przejdz {
+    text-decoration: none;
+    color: white;
+}
