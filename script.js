@@ -5,3 +5,7 @@ function Kontakt() {
 function ZTP() {
     navigator.clipboard.writeText("sekretariat@ztp.krakow.pl");
 }
+
+function MPK() {
+    navigator.clipboard.writeText("zarzad@mpk.krakow.pl");
+}

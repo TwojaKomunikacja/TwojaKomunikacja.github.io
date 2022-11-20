@@ -1,6 +1,10 @@
+@font-face {
+    font-family: "Unispace";
+    src: url(unispace\ bd.ttf) format("truetype");
+}
+
 html {
     overflow-y: scroll;
-    scrollbar-color: black red;
 }
 
 body {
@@ -36,7 +40,7 @@ header a {
 }
 
 header a:hover {
-    background: red;
+    background: blue;
 }
 
 .logo {
@@ -63,15 +67,38 @@ header a:hover {
 }
 
 #KoronaDiv {
-    background-image: url("Tlo.jpg");
+    background-image: url("Tlo1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: calc(100vh - 80px);
-    width: 100%;
+    width: 50%;
+    float: left;
 }
 
 #KoronaP {
+    position: relative;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    top: 80%;
+    left: 50%;
+    margin: 0 auto;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 5vh;
+}
+
+#KrotkieDiv {
+    background-image: url("Tlo2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+    width: 50%;
+    float: right;
+}
+
+#KrotkieP {
     position: relative;
     text-align: center;
     text-shadow: 1px 1px black;
@@ -89,12 +116,20 @@ header a:hover {
 }
 
 aside {
-    background-image: url("Tlo.jpg");
+   background-image: url("Tlo3.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
+}
+
+#Korona {
+    background-image: url("Tlo1.jpg");
+}
+
+#Krotkie {
+    background-image: url("Tlo2.jpg");
 }
 
 @media only screen and (max-width: 1080px) {
@@ -117,7 +152,7 @@ aside {
     min-height: calc(100vh - 144px);
 }
 
-p, #pojecia {
+p, #pojecia, ul.tabor {
     padding-right: 20px;
     padding-left: 20px;
     font-size: 20px;
@@ -149,7 +184,7 @@ footer {
 
 button {
     width: 65px;
-    background-color: red;
+    background-color: blue;
     color: white;
     border: 0px;
     border-color: black;
